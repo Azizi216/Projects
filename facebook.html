@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <style>
+        .head{
+            position: fixed;
+            height: 50px;
+            width: 100%;
+    
+            
+            top: 0;
+            display: flex;
+            background-color: white;
+            z-index: 100;
+        }
+        .left-section{
+           
+            width: 40%;
+            display: flex;
+            align-items:  center;
+            padding-left: 10px;
+        }
+        .right-section{
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 30px;
+            
+        }
+        .middle-section{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 40px;
+            padding-right: 40px;
+
+        }
+        .facebook-icon{
+            width: 35px;
+        }
+        .search{
+            width: 220px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+            border-width: 1px;
+            color: lightslategray;
+            border-color: lightslategray;
+            border-style: solid;
+            padding-left: 35px;
+            background-color:rgb(240, 240, 240);
+        }
+        .Search{
+            padding-left: 10px;
+            
+        }
+        .home-icon{
+            height: 25px;
+            width: 25px;
+            
+         
+        }
+        .profile-picture{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+            
+        }
+        .right-icon{
+            background-color: rgb(195, 194, 194);
+            border-radius: 100%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            margin-left: 5px;
+        }
+        body{
+            background-color: rgb(240, 240, 240);
+            height: 1000px;
+        }
+        .down-left{
+            position: fixed;
+   
+            top: 70px;
+            left: 10px;
+            bottom: 300px;
+            width: 300px;
+            margin-left: 10px;
+            
+
+        }
+        .down-left-icon{
+            display: flex;
+            align-items: center;
+            margin-bottom:10px ;
+            
+
+        }
+        .left-down-icon{
+            height: 30px;
+        }
+        .middle-left-down2{
+            position: fixed;
+            
+            top: 390px;
+            left: 10px;
+            width: 300px;
+            align-items: first baseline;
+            margin-left: 10px;
+
+        }
+        .line{
+            
+            width: 200px;
+        }
+        .down-left-icon2{
+            display: flex;
+            align-items: center;
+            
+        }
+        .left-down-imgs2{
+            width: 33px;
+            height: 33px;
+            border-radius: 6px;
+            object-fit: cover;
+            
+        }
+        .down-left-text{
+            width: 190px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .left-down-imgs3{
+            width: 40px;
+            margin-right: 4px;
+            margin-bottom: 8px;
+        }
+        .Stories-div{
+            width: 690px;
+            margin-top: 67px;
+            margin-left: 310px;
+            height: 180px;
+            display: flex;
+        }
+        .stories-img{
+            width: 110px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-left: 4px;
+        }
+        .Story-img-second{
+            position: relative;
+        }
+        .story-whithin-text{
+            position: absolute;
+            bottom: 0;
+            background-color:rgb(255, 255, 255);
+            height: 60px;
+            width: 110px;
+            margin-left: 4px;
+            border-radius: 0 0 5px 5px;
+            display: flex;
+            justify-content: center;
+        
+        }
+        .story-whithin-text2{
+            position: absolute;
+           color: white;
+            width: 110px;
+            margin-left: 4px;
+            display: flex;
+            justify-content: center;
+            bottom: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+        .right-down-side{
+            position: fixed;
+            top: 60px;
+            right: 10px;
+            height: 400px;
+            
+            bottom: 600px;
+            width: 250px;
+           
+        }
+        .story-profile{
+            width: 25px;
+            height: 25px;
+            border-radius: 15px;
+            border: solid;
+            border-width: 3px;
+            border-color: rgb(61, 61, 252);
+            object-fit: cover;
+        }
+        .story-profile-div{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        .posting{
+            margin-top:  20px;
+            margin-left: 315px;
+            right: 120px;
+            width: 680px;
+            padding-top: 5px;
+            border-radius: 6px;
+            
+         
+            background-color: white;
+        }
+        .posting-first-class{
+            display: flex;
+            align-items: center;
+        }
+        .search-posting{
+            width: 600px;
+            padding-top: 0;
+            height: 30px;
+            padding-bottom: 0;
+            border-radius: 150px;
+            border: none;
+            margin-left: 10px;
+            background-color: rgb(235, 235, 235);
+        }
+        .posting-second-class{
+            display: flex;
+            align-items: center;
+        }
+        .posting-second-up{
+            display: flex;
+            justify-content: space-between;
+            justify-content: space-between;
+        }
+        .post{
+            margin-left: 320px;
+            margin-top: 20px;
+            height: 400px;
+            width: 680px;
+            background-color: white;
+    
+        }
+        .post-img{
+            display: flex;
+            justify-content: start;
+        }
+        .upper-post{
+            display: flex;
+            justify-content: space-between;
+        }
+        .dots{
+            font-size: 100x;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-right: 40px;
+        }
+        .post-name{
+            margin-bottom: 3px;
+        }
+        .post-img2{
+            width: 680px;
+            height: 500px;
+        }
+        .sponserd-img{
+            width: 100px;
+            border-radius: 4px;
+
+        }
+        .sponsered{
+            display: flex;
+            margin-bottom: 10px;
+
+        }
+        .gift{
+            width: 30px;
+            height: 27px;
+        }
+    
+    </style>
+
+
+</head>
+
+<body>
+<div class = "head">
+    <div class = "left-section">
+        <div>
+            <img class = "facebook-icon" src="https://freepnglogo.com/images/all_img/1730342312_facebook_social_media_icon.png">
+        </div>
+        <div class = "Search">
+            <input class = "search" type="search" placeholder="Search Facebook">
+
+        </div>
+        
+        <div>
+
+        </div>
+    </div>
+    <div class = "middle-section">
+        <img class = "home-icon" src="https://www.clipartmax.com/png/full/201-2010838_fb-home-icon.png">
+        <img class = "home-icon" src="https://cdn-icons-png.flaticon.com/512/4406/4406139.png">
+        <img class = "home-icon" src = "https://www.iconpacks.net/icons/2/free-store-icon-1977-thumb.png">
+        <img class = "home-icon" src = "https://www.freeiconspng.com/thumbs/community-icon/community-icon-6.png">
+        <img class = "home-icon" src = "https://spolearninglab.com/curriculum/images/daily_lessons/math/penrose/Tribox_1000.gif">
+    </div>
+    <div class = "right-section">
+        <div style="display: flex; padding-right: 10px;"> <img class = "profile-picture" src="https://imageio.forbes.com/specials-images/imageserve/67531eb2b5f7c9e191f632d7/0x0.jpg?format=jpg&crop=711,713,x316,y125,safe&height=416&width=416&fit=bounds">
+            <p style="padding-left: 5px;">MAX wiber</p></div>
+       
+        <div class = "right-icon"><img class = "home-icon" src = " https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Plus_symbol.svg/1200px-Plus_symbol.svg.png"></div>
+        <div class = "right-icon"><img class = "home-icon" src = " https://www.logo.wine/a/logo/Facebook_Messenger/Facebook_Messenger-Black-Logo.wine.svg"></div>
+        <div class = "right-icon"><img class = "home-icon" src="https://cdn1.iconfinder.com/data/icons/twitter-ui-glyph/48/Sed-22-512.png"></div>
+        <div class = "right-icon"><img class = "home-icon" src="https://png.pngtree.com/png-clipart/20240817/original/pngtree-two-black-shake-hands-icon-vector-png-image_15794848.png"></div>
+    </div>
+   
+
+</div>
+<div class = "down-left">
+
+    <div class = "down-left-icon">
+        <img class = "profile-picture" src="https://imageio.forbes.com/specials-images/imageserve/67531eb2b5f7c9e191f632d7/0x0.jpg?format=jpg&crop=711,713,x316,y125,safe&height=416&width=416&fit=bounds">
+            <p style="padding-left: 5px;">MAX wiber</p>
+    </div>
+
+
+<div class = "down-left-icon">
+    <img class = "left-down-icon" src="https://cdn-icons-png.flaticon.com/512/4406/4406124.png">
+        <p style="padding-left: 5px;">Watch</p>
+</div>
+<div class = "down-left-icon">
+    <img class = "left-down-icon" src="https://images.vexels.com/media/users/3/223406/isolated/preview/cb0f43285fb4c97c7236772b17e6c268-star-icon-flat.png">
+        <p style="padding-left: 5px;">Events</p>
+</div>
+<div class = "down-left-icon">
+    <img class = "left-down-icon" src="https://cdn-icons-png.flaticon.com/512/6387/6387942.png">
+        <p style="padding-left: 5px;">Friends</p>
+</div>
+<div class = "down-left-icon">
+    <div class = "left-down-icon"><img class = "left-down-icon" src="https://cdn0.iconfinder.com/data/icons/facebook-feature-outline/32/facebook-18-512.png"></div>
+        <p style="padding-left: 5px;">Memories</p>
+</div>
+<div class = "down-left-icon">
+    <div class = "right-icon"><img class = "home-icon" src="https://cdn.iconscout.com/icon/free/png-256/free-expand-more-icon-download-in-svg-png-gif-file-formats--material-design-icons-google-navigation-pack-user-interface-1514165.png?f=webp&w=256"></div>
+        <p style="padding-left: 5px;">See more</p>
+</div>
+
+</div>
+<div class = "middle-left-down2">
+    <hr class = "line">
+    <p style="color: lightgray;">Shortcuts</p>
+    <div class = "down-left-icon2">
+        <div class = "left-down-imgs3">
+            <img class = "left-down-imgs2" src="https://static.vecteezy.com/system/resources/thumbnails/036/333/113/small/monarch-beautiful-butterflygraphy-beautiful-butterfly-on-flower-macrography-beautyful-nature-photo.jpg">
+        </div>
+        <div class = "down-left-text">
+            Save the pemory Theatre
+        </div>
+    </div>
+    <div class = "down-left-icon2">
+        <div class = "left-down-imgs3">
+            <img class = "left-down-imgs2" src="https://assets.insuremytrip.com/wp-content/uploads/2015/09/02123132/weekend-trip-insurance.webp">
+        </div>
+        <div class = "down-left-text">
+            Weekend Trip
+        </div>
+    </div>
+    <div class = "down-left-icon2">
+        <div class = "left-down-imgs3">
+            <img class = "left-down-imgs2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSqP21--ZoyB3nOVHFEbC046uheKARl8NMA&s">
+        </div>
+        <div class = "down-left-text">
+            Jaspers's Market
+        </div>
+    </div>
+    <div class = "down-left-icon2">
+        <div class = "left-down-imgs3">
+            <img class = "left-down-imgs2" src="https://ca-times.brightspotcdn.com/dims4/default/fa6c675/2147483647/strip/false/crop/1920x1080+0+0/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fba%2Fcd%2Fbd6f42e946d5b2dd38458349c4a1%2Fhoriz-clean-credit-red-table-talk-facebook-watch.jpg">
+        </div>
+        <div class = "down-left-text">
+            Red Table Talk Group
+        </div>
+    </div>
+    <div class = "down-left-icon2">
+        <div class = "left-down-imgs3">
+            <img class = "left-down-imgs2" src="https://cloudfront-us-east-1.images.arcpublishing.com/startribunemedia/KR2T2RDGMHH3S24NLRUYTXJEE4.jpg">
+        </div>
+        <div class = "down-left-text">
+            Beat Hidden Hiking Trails
+        </div>
+    </div>
+    
+    
+    
+</div>
+<div class = "Stories-div">
+    <div class = "Story-img-second">
+        <img class = "stories-img" src="https://cloudfront-us-east-1.images.arcpublishing.com/startribunemedia/KR2T2RDGMHH3S24NLRUYTXJEE4.jpg">
+        <div class = "story-whithin-text">Creat a story</div>
+    
+    
+    </div>
+    <div class = "Story-img-second">
+        <img class = "stories-img" src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?cs=srgb&dl=pexels-pixabay-206359.jpg&fm=jpg">
+        <div class = "story-whithin-text2">Tom Russo</div>
+        <div class = "story-profile-div"><img class = "story-profile" src="https://i.pinimg.com/736x/90/f7/a4/90f7a49893bc987858e13e10ffc72a23.jpg"> </div>
+    
+    </div>
+    <div class = "Story-img-second">
+        <img class = "stories-img" src="https://media.istockphoto.com/id/518356812/photo/tropical-sea-and-rocks.jpg?s=612x612&w=0&k=20&c=bRAfkVsQ-d5wQjYiRWupDBThGr1Zn7aEP98VWFaxBy8=">
+        <div class = "story-whithin-text2">Betty chen</div>
+        <div class = "story-profile-div"><img class = "story-profile" src="https://images.theconversation.com/files/581726/original/file-20240313-24-56o3zs.jpg?ixlib=rb-4.1.0&rect=43%2C153%2C4844%2C2601&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip"> </div>
+    
+    </div> 
+    <div class = "Story-img-second">
+        <img class = "stories-img" src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Best-nd-Beautiful-Images.jpg">
+        <div class = "story-whithin-text2">Dennis Han</div>
+        <div class = "story-profile-div"><img class = "story-profile" src="https://learn.zoner.com/wp-content/uploads/2018/08/a.jpg?fidl=2019-06-mag-en&utm_source=learn.zoner.com&utm_medium=referral&utm_campaign=how-to-place-one-photo-inside-another&utm_content=text"> </div>
+    
+    </div>
+    <div class = "Story-img-second">
+        <img class = "stories-img" src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?cs=srgb&dl=pexels-soldiervip-1308881.jpg&fm=jpg">
+        <div class = "story-whithin-text2">Cynthia Lopez</div>
+        <div class = "story-profile-div"><img class = "story-profile" src="https://media.istockphoto.com/id/1181011006/photo/photo-of-amazing-dark-skin-lady-holding-photo-digicam-in-hands-photographing-foreign.jpg?s=612x612&w=0&k=20&c=SZ67CStYYU-mePnneWckz4WeeRB28v9fAuUzMHs_Bp0="> </div>
+    
+    </div>
+    <div class = "Story-img-second">
+        <img class = "stories-img" src="https://www.planetware.com/wpimages/2019/11/canada-in-pictures-beautiful-places-to-photograph-peggys-cove-lighthouse.jpg">
+        <div class = "story-whithin-text2">Afonso pinto</div>
+        <div class = "story-profile-div"><img class = "story-profile" src="https://images.media.io/images2023/photo-enhance/banner-after.png"> </div>
+    </div>
+</div>
+
+<div class = "right-down-side">
+    <p>Sponserd</p>
+    <div class = "sponsered">
+        <img class = "sponserd-img"  src = "https://www.pagesjaunes.fr/static-annuaire/act/pizzeria_03.jpg">
+        <div>
+            <p style="margin-bottom: 2px;">libos pizza</p>
+            <p style="font-size: 12px; color: grey; margin-top: 0;">libospizza.com</p>
+        </div>
+    </div>
+
+     <div class = "sponsered">
+        <img class = "sponserd-img"  src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSqP21--ZoyB3nOVHFEbC046uheKARl8NMA&s">
+        <div>
+            <p style="margin-bottom: 2px;">jaspers' markets</p>
+            <p style="margin-top: 2px; margin-bottom: 2px;">produce sales</p>
+            <p style="font-size: 12px; color: grey; margin-top: 0;">libospizza.com</p>
+        </div>
+    </div>
+    <hr>
+    <p style="color: gray; margin-bottom: 0;">Birthday</p>
+    <div style="display: flex; align-items: center;">
+        <img class = "gift" src = "https://cdn-icons-png.flaticon.com/512/447/447926.png">
+        <p> <spam style="width: bold;">Tamana, Alizada,</spam> and 2 others have birthday today</p>
+    </div>
+    <hr>
+    <div style="display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    ">
+    <p style="color: gray;">Conatct</p>
+    <div>
+        <img style="width: 20px;" src="https://www.pikpng.com/pngl/m/359-3599608_picto-loupe-png-facebook-search-icon-png-clipart.png">
+        <img style="width: 20px;" src="https://static.thenounproject.com/png/1380510-200.png">
+    </div>
+    
+    </div>
+    <div>
+       <div style="display: flex; margin-bottom: 10px;">
+        <img class = "profile-picture" src="https://www.shutterstock.com/image-photo/passport-photo-portrait-young-man-260nw-2437772333.jpg">
+        <p>Dennis Han</p>
+       </div>
+       <div style="display: flex; margin-bottom: 10px;">
+        <img class = "profile-picture" src="https://media.istockphoto.com/id/636379014/photo/hands-forming-a-heart-shape-with-sunset-silhouette.jpg?s=612x612&w=0&k=20&c=CgjWWGEasjgwia2VT7ufXa10azba2HXmUDe96wZG8F0=">
+        <p>Eric Jons</p>
+       </div>
+       <div style="display: flex; margin-bottom: 10px;">
+        <img class = "profile-picture" src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,ar_4:3,f_auto,q_auto,g_auto/shape/cover/sport/baby-0-6c1fb56049ed7442c2eb8b70baaf3ba3.jpg">
+        <p>Tamana Alizada</p>
+       </div>
+       <div style="display: flex; margin-bottom: 10px;">
+        <img class = "profile-picture" src="https://static.vecteezy.com/system/resources/thumbnails/029/663/882/small_2x/adorable-baby-with-vibrant-clothing-in-a-playful-pose-ai-generative-photo.jpg">
+        <p>Neksrisht</p>
+       </div>
+       
+       
+    </div>
+
+</div>
+
+
+
+
+<div class = "posting">
+    <div class = "posting-first-class">
+        <img class = "profile-picture" src="https://imageio.forbes.com/specials-images/imageserve/67531eb2b5f7c9e191f632d7/0x0.jpg?format=jpg&crop=711,713,x316,y125,safe&height=416&width=416&fit=bounds">
+        <input class = "search-posting" type="search" placeholder="What's your mind Max Wibber">
+
+
+    </div>
+    <hr style="background-color: rgb(223, 225, 226);">
+    <div class = "posting-second-up">
+        <div class = "posting-second-class">
+            <img class = "left-down-icon" src = "https://cdn-icons-png.flaticon.com/256/11820/11820294.png">
+            <p>Live</p>
+        </div>
+        <div class = "posting-second-class">
+            <img class = "left-down-icon" src = "https://cdn-icons-png.flaticon.com/512/8198/8198401.png">
+            <p>Photo/Video</p>
+        </div>
+        <div class = "posting-second-class">
+            <img class = "left-down-icon" src = "https://static-00.iconduck.com/assets.00/grinning-face-emoji-2048x2048-aztzclsv.png">
+            <p>Feeling/Activity</p>
+        </div>
+
+    </div>
+</div>
+<div>
+    <div class = "post">
+        <div class = "upper-post">
+            <div class = "post-img">
+                <img style="margin-top: 10px; margin-left: 10px;" class = "profile-picture" src="https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?cs=srgb&dl=pexels-andre-furtado-43594-1264210.jpg&fm=jpg">
+                <div> <p class = "post-name">Fiona Ozer</p>
+                      <p style="font-size: 12px; color: grey; margin-top: 0;">5 hr</p>
+                </div>
+               
+            </div>
+    
+            <div>
+                <p class = "dots" >...</p>
+            </div>
+    
+        </div>
+        <p>Best fireword I ever see in my life</p>
+        <div > <img class = "post-img2" src = "https://img.freepik.com/premium-photo/geyser-lake-yellow-autumn-forest-altai-mountains-siberia-russia-beautiful-autumn-landscape_545689-200.jpg?semt=ais_hybrid&w=740 "> </div>
+    </div>
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
