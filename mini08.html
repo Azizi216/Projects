@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        background-color: rgb(170, 255, 0);
+        display: flex;
+        height: 97vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+      }
+      button{
+        width: 120px;
+        height: 25px;
+        border-radius: 11px;
+        border: none;
+        background-color: aqua;
+        border-style:inset;
+        
+      }
+      button:hover{
+        opacity: 0.6;
+        background-color: rgba(0, 255, 255, 0.425);
+        cursor: pointer;
+      }
+      p{
+        font-size: 30px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-shadow: 1px 1px 2px  rgba(0, 0, 0, 0.9);
+
+      }
+      button:active{
+        opacity: 0.5;
+        background-color: antiquewhite;
+      }
+      .Reset{
+        background-color: rgb(255, 45, 45);
+        color: white;
+      }
+      .mydive{
+        border-style: dotted;
+        border-color: rgb(27, 25, 25);
+        
+        margin-bottom: 4px;
+      
+      }
+      .finall{
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        
+      }
+      .strog{
+        color: black;
+      }
+      .win{
+        color: white;
+      }
+      .losses{
+        color: red;
+      }
+
+       
+    </style>
+
+  </head>
+  <body>
+    <p>Head and Tail Game</p>
+    <div class = "mydive">
+      <button onclick="playgame('Tail')">Tail</button>
+      <button onclick="playgame('Head')">Head</button>
+      </div>
+      <button class = 'Reset' onclick="reset()">Reset</button>
+
+      <p id = "my_result" class = "finall"></p>
+
+      <script>
+        
+        let computerMove= '';
+        let result = '';
+        const score = {
+          wins : 0,
+          losses : 0
+        };
+          
+        function proccess(){
+          let randomNumber = Math.random();
+          
+        
+        if(randomNumber > 0.5){
+          computerMove = 'Tail';
+
+        } else if(randomNumber <= 0.5){
+          computerMove = 'Head';
+        }
+   
+        console.log(computerMove)
+        
+
+        }
+        
+        
+        function playgame(playerMove){
+          proccess();
+          if (playerMove === 'Tail'){
+            if(computerMove === 'Tail'){
+              result = 'You Win'
+
+            } else{
+              result = 'You lose'
+            }
+          } else if (playerMove === 'Head'){
+              if(computerMove === 'Head'){
+                result = 'You Win'
+              }else{
+                  result = 'You lose'
+              }
+          }
+          if(result ==='You Win'){
+            score.wins += 1;
+          } else if(result =='You lose'){
+            score.losses += 1;
+          }
+          
+          document.getElementById('my_result').innerHTML = `you chose <span class = "strog"> ${playerMove} </span> after flip <span class = "strog"> ${computerMove} </span> finall result: <span class = "strog"> ${result} </span>
+
+         <br> <span class = "win">wins ${score.wins} </span> & losses <span class = "losses"> ${score.losses} </span>
+          ` ;
+
+        }
+        
+        function reset(){
+          score.wins = 0;
+          score.losses = 0;
+        
+          document.getElementById('my_result').innerHTML = `wins ${score.wins} & losses ${score.losses} scores reseted `
+        }
+        
+        
+
+
+
+      </script>
+
+    </div>
+  </bod>
+</html>
