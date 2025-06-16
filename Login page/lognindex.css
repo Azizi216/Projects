@@ -1,0 +1,103 @@
+.container{
+  width: 400px;
+  background: linear-gradient(to right, rgb(153, 19, 180)
+  , rgb(9, 0, 128));
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  box-shadow: 6px 6px 8px black;
+  border-radius: 6px;
+
+}
+.container h1{
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+}
+.container button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(13, 212, 46);
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.container button:hover{
+  opacity: 0.8;
+  background-color: black;
+
+}
+container button:active{
+  opacity: 0.6;
+  background-color: white;
+}
+
+.container input{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(251, 255, 251);
+  border: none;
+  border-bottom: solid;
+  border-width: 1px;
+  padding-left: 10px;
+
+}
+body{
+  background:linear-gradient(to right, rgb(18, 51, 199), rgb(28, 15, 66));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  flex-direction: column;
+}
+.downside{
+  background-color: white;
+  width: 400px;
+  
+  
+
+}
+.downside {
+  display: none;
+  color:black;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  display: none;
+  box-shadow: 6px 6px 8px black;
+}
+.downside p{
+  padding-left: 20px;
+  
+}
+.downside img{
+  width: 30px;
+  padding-right: 20px;
+}
+.pass_div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  
+
+}
+.pass_div input{
+  width: 100%;
+}
+.close-eye{
+  width: 20px;
+  height: 15px;
+}
+.pass_div button{
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  right: 4px;
+  
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+      <link rel = "stylesheet" href="lognindex.css">
+        
+  </head>
+  <body>
+    <div class = "container">
+      <h1>Password</h1>
+      <div class = pass_div>
+        <input type="password" placeholder="Enter Your Password" class = "js-password-input" id = "psswordF">
+        <button><img class=" close-eye" src="images/eye-close.png" id = "eyeicon"></button>
+      </div>
+      <div class="pass_div">
+        <input type="password" placeholder="Confirm your password" class = "js-pssword-confirm" id = "downinput">
+        <button ><img class=" close-eye" src="images/eye-close.png" id = "downbutton"></button>
+
+      </div>
+      <button onclick="check()" class ="Submit">Submit</button>
+    </div>
+    <div class = "downside" id = "Display">
+      <p id = "Result">You Password</p>
+
+      <img id = "img" src="https://cdn-icons-png.flaticon.com/512/2550/2550322.png">
+
+    </div>
+
+    <script src="loginIndex.js"></script>
+
+
+  </body>
+</html>
