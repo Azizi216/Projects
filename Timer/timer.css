@@ -1,0 +1,87 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  background: linear-gradient(to top right, rgb(6, 6, 180), black
+    );
+}
+#innerdiv{
+  display: flex;
+  gap: 20px;
+  
+}
+#innerdiv{
+  color: white;
+  font-size: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px;
+  border: solid;
+  padding: 20px;
+  border-radius: 20px;
+  border-style:dotted;
+  border-color: black;
+}
+.start{
+  width: 90px;
+  height: 30px;
+  background: greenyellow;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.stop{
+  width: 90px;
+  height: 30px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+.button_div{
+  gap: 20px;
+  display: flex;
+}
+.start:hover{
+  opacity: 0.8;
+  background: rgba(172, 255, 47, 0.596);
+}
+.stop:hover{
+  opacity: 0.8;
+  background: rgba(255, 0, 0, 0.377);
+}
+.Reset{
+  width: 90px;
+  height: 30px;
+  background: rgb(247, 192, 11);
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+
+}
+.Reset:hover{
+  opacity: 0.6;
+  background-color: rgba(255, 255, 0, 0.527);
+}
+.outer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  padding: 40px;
+  border-color:white;
+  border-style: outset;
+  border-radius: 20px;
+
+}
