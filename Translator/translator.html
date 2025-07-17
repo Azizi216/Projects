@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="translator.css">
+
+  </head>
+  <body>
+    <div class="top">
+      <div class = "left">
+        <img class = "logo" src="T.gif">
+      </div>
+      <div class = "right"></div>
+      <div class = "myname">Hashmatullah Azizi</div>
+      <button onclick="infoShow(event)">About</button>
+      
+    </div>
+    <div id="infromation" onclick="event.stopPropagation()">
+      <h3>About This Program</h3>
+      <p>
+        Hi I am  <strong>Azizi Hashmatullah</strong> the owner of this website.
+        and I currently studying <em>Computer Systems and Software</em> at the 
+        <strong>Kazakh-British Technical University</strong>.
+      </p>
+    </div>
+    
+    <div class="container">
+      <div class = "head">
+
+        <div class = "detet_language_div">
+          <img  class = "tranlate-sigh" src="https://cdn.creazilla.com/icons/3215332/translate-icon-lg.png">
+          <button id = "selectedLanguageBtn" class = "button" onclick="showlist()">Detect langauge</button>
+        </div>
+
+        <div class = "chnage_language_div" onclick="changelnage()">
+          <img  class = "tranlate-sigh" src="https://cdn2.iconfinder.com/data/icons/netowrk-icons/512/Exchange_Arrows-512.png">
+        </div>
+        
+        <div class = "detet_language_div">
+          <img  class = "tranlate-sigh" src="https://cdn.creazilla.com/icons/3215332/translate-icon-lg.png">
+          <button onclick="showlist2()"  id = "selectedLanguageBtn2" class = "button">English (US)</button>
+        </div>
+      </div>
+
+      <div class = "elments">  
+        <div class = input>
+          <textarea class = "input_text"></textarea>
+        </div>
+        <div class = "language_list" id = "language_list">
+          <input type="text" placeholder="search language.." id = "languagesearch">
+        <div class = "top-languages">
+          <button class = "lang-btn">Detect language</button>
+          <button class = "lang-btn">English</button>
+          <button class = "lang-btn">spanish</button>
+          <button class = "lang-btn">Russian</button>
+
+        </div>
+        <div class = "all-language" id = "languageList" >
+         
+        </div>
+        </div>
+       
+      <div class = "translated">
+        <textarea class = "translated_text" ></textarea>
+        <div class = "language_list2" id = "language_list2">
+          <input type="text" placeholder="search language.." id = "languagesearch2">
+        <div class = "top-languages">
+          <button class = "lang-btn">Detect language</button>
+          <button class = "lang-btn">English</button>
+          <button class = "lang-btn">spanish</button>
+          <button class = "lang-btn">Russian</button>
+
+        </div>
+        <div class = "all-language" id = "languageList2" >
+         
+        </div>
+        </div>
+      </div> 
+     
+        
+      </div>
+      <div class = "down" onclick="translateText()">
+        <img ondblclick="translateText()" class = "right_arrow" src="https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/right_2-512.png"> Translate 
+      </div>
+      
+    </div>
+    <script src="translator.js"></script>
+  </body>
+</html>
