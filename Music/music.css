@@ -1,0 +1,173 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-image: url("https://i.pinimg.com/originals/02/46/3a/02463a6434322534ad31f876e336c51f.gif");
+  background-size: cover;
+}
+.img img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 0;
+  position: absolute;
+  left: 12%;
+
+}
+.img{
+  height: 200px;
+  width: 200px;
+  border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50% ;
+  position: relative;
+  border-width: 20px;
+  border-style: inset;
+  border-color: rgb(255, 0, 128);
+  background: url("https://img.freepik.com/free-vector/gradient-music-notes-background_23-2151320190.jpg?semt=ais_hybrid&w=740");
+  animation: moving 4s linear infinite;
+
+}
+@keyframes moving {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(365deg);
+  }
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  align-items: center;
+  background-image: url("https://img.freepik.com/free-vector/gradient-music-notes-background_23-2151320190.jpg?semt=ais_hybrid&w=740") ;
+  flex-direction: column;
+  width: 200px;
+  height: 390px;
+  border: solid;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  
+}
+.buttons button{
+  height: 35px;
+  border: none;
+  background: rgb(7, 233, 7);
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(14, 0, 0);
+  font-weight: 700;
+  border-radius: 4px;
+  
+}
+#previews{
+  background: rgb(219, 219, 6);
+
+}
+#pause{
+  background-color: rgb(207, 6, 6);
+
+}
+.previos img{
+  width: 30px;
+  filter: invert(1);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  
+}
+.previos img:hover{
+  transform:scale(0.8)
+}
+.previos img:active{
+  filter: none
+}
+
+
+
+
+.pause img{
+  width: 35px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  filter: invert(1);
+  transition: transform 0.2s, background-color 0.2s;
+}
+.pause img:hover{
+  transform:scale(0.9);
+  left: 4px;
+  
+}
+.pause img:active{
+  width: 32px;
+  left: 5px;
+  top: 5px;
+  filter: none;
+}
+.pause {
+  height: 42px;
+  width: 42px;
+  border: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width:2px ;
+  border-radius: 50%;
+  border-color: white;
+  position: relative;
+  cursor: pointer;
+}
+.next img{
+  width:30px;
+  filter: invert(1);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+.next img:hover{
+  transform:scale(0.9)
+  
+}
+.next img:active{
+  transform:scale(0.8);
+  filter: none;
+  
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.container input{
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+  padding-left: 10px;
+  font-weight: 600;
+  font-family: cursive;
+}
+#results{
+  position: absolute;
+  width: 76%;
+  border: solid;
+  max-height: 180px;
+  overflow-y: auto;
+  height: 350px;
+  background-color: white;
+  top: 87px;
+  border: none;
+  z-index: 2;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  display: none;
+}
