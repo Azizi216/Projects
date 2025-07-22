@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000000;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+      const canvas = document.getElementById("canvas");
+      const context = canvas.getContext("2d");
+
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+
+      let nearParticles = [],
+        middleParticles = [],
+        farParticles = [];
+
+      const particleSettings = {
+        count: 250,
+      };
+
+      // Handle window resize
+      window.addEventListener("resize", () => {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+
+        // Reset particles to avoid visual artifacts
+        nearParticles = [];
+        middleParticles = [];
+        farParticles = [];
+      });
+
+      function randomNumber(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      function Particle(area, alpha, vy) {
+        this.area = area;
+        this.x = Math.random() * width;
+        this.y = Math.random() * height - height;
+        this.alpha = alpha;
+        this.vy = vy * 10;
+        this.color = "rgb(255, 255, 255)";
+      }
+
+      Particle.prototype.draw = function () {
+        this.y += (Math.cos(this.area) + this.vy) * 0.3;
+        context.save();
+        context.beginPath();
+        context.arc(this.x, this.y, this.area, 0, Math.PI * 2);
+        context.fillStyle = this.color;
+        context.globalAlpha = this.alpha;
+        context.closePath();
+        context.fill();
+        context.restore();
+      };
+
+      function createSnow(particles, depth) {
+        while (particles.length < particleSettings.count) {
+          if (depth === "near") {
+            particles.push(new Particle(4, 0.9, 0.3));
+          } else if (depth === "middle") {
+            particles.push(new Particle(3, 0.5, 0.2));
+          } else {
+            particles.push(new Particle(2, 0.3, 0.1));
+          }
+        }
+      }
+
+      function animateSnow() {
+        context.clearRect(0, 0, width, height);
+
+        createSnow(nearParticles, "near");
+        createSnow(middleParticles, "middle");
+        createSnow(farParticles, "far");
+
+        let particles = [...nearParticles, ...middleParticles, ...farParticles];
+        particles = particles.sort(() => 0.5 - Math.random());
+
+        for (let i = 0; i < particles.length; i++) {
+          particles[i].draw();
+          if (particles[i].y > height) {
+            particles[i].y = Math.random() * height - height;
+          }
+        }
+
+        requestAnimationFrame(animateSnow);
+      }
+
+      window.onload = () => {
+        animateSnow();
+      };
+    </script>
+  </body>
+</html>
