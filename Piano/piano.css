@@ -1,0 +1,118 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #e3f2fd;
+
+
+}
+.container{
+  background: #141414;
+  width: 780px;
+  border-radius: 20px;
+  padding: 35px 40px;
+}
+.container header{
+  color: #b2b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+header h2{
+  font-size: 1.6rem;
+}
+header .column{
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+header .column span{
+  font-weight: 500;
+  font-size: 1.19rem;
+}
+.piano-keys .key{
+  list-style: none;
+  color: #a2a2a2;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+
+}
+.volume-slider input{
+  accent-color: #fff;
+  outline: none;
+
+}
+.keyscheck input{
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 30px;
+  background: #4b4b4b;
+  position: relative;
+}
+.keyscheck input::before{
+  content:"" ;
+  height: 20px;
+  width: 20px;
+  top: 50%;
+  left: 5px;
+  border-radius: inherit;
+  position: absolute;
+  background: #8c8c8c;
+  transform: translateY(-50%);
+  position: absolute;
+  transform: all 0.3s ease;
+
+}
+.keyscheck input:checked::before{
+  left: 35px;
+  background: #fff;
+}
+.piano-keys{
+  display: flex;
+  margin-top:40px;
+
+
+}
+.piano-keys .white{
+  width:70px ;
+  height: 230px;
+  border-radius: 8px;
+  background: linear-gradient(#fff 96%, #eee 4%);
+  border: 1px solid #000;
+
+
+}
+.piano-keys .black.active{
+  background: linear-gradient(to bottom,  #000, #434343);
+  box-shadow: inset -5px 5px 10px rgba(255,255,255,0.1);
+}
+.piano-keys .black{
+  width:44px ;
+  height: 140px;
+  z-index: 2;
+  border-radius: 0 0 5px 5px;
+  margin: 0 -22px 0 -22px;
+  background: linear-gradient(#333 , #000 4%);
+}
+.piano-keys .white.active{
+  background: linear-gradient(to bottom,  #fff 0%, #eee 100%);
+  box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+}
+.piano-keys span{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  font-size: 1.13rem;
+  text-align: center;
+
+}
+.piano-keys .key.hide span{
+  display: none;
+
+}
