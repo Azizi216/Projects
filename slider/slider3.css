@@ -1,0 +1,173 @@
+body{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  
+  
+}
+.automns{
+  height: 100%;
+  width: 45%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: orange;
+  color: white;
+  
+}
+.img-holder{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.arrowUp{
+  height: 40px;
+  width: 40px;
+
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  z-index: 2;
+  box-shadow: 0px 0px 6px black;
+  border-radius: 4px;
+  border-width:1px ;
+  background: white;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.arrowdown{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 56%;
+  left: 28%;
+  z-index: 2;
+  border-width:1px ;
+  background: white;
+  box-shadow: 0px 0px 6px black;
+  border-radius: 4px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.arrowdown:hover{
+  opacity: 1;
+  transform: scale(0.97);
+}
+.arrowdown:active{
+  opacity: 1;
+  transform: scale(0.9);
+}
+.arrowUp:hover{
+  opacity: 1;
+  transform: scale(0.97);
+}
+.arrowUp:active{
+  opacity: 1;
+  transform: scale(0.9);
+}
+.arrowUp img{
+  width: 40px;
+}
+.arrowdown img{
+  width: 40px;
+}
+.img-holder img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+.spring{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(76, 130, 148);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.seasonHolder{
+  transition: translateY(0);
+  overflow: hidden;
+  position: relative;
+  width: 45%;
+  height: 100%;
+}
+.img-slide{
+  width: 100%;
+  height: 100vh;
+}
+.summer{
+  color: white;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.img-holder{
+  position: relative;
+  overflow: hidden;
+
+}
+.fall{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.seasonHolder > div,
+.img-holder > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;opacity: 0;
+  transition:opacity 0.5 ease-in-out opacity 0.8s ease;
+  opacity: 0;
+  z-index: 0;
+        }
+        .seasonHolder > .active, 
+        .img-holder > .active {
+          opacity: 1;
+          z-index: 1;
+        
+        }
+
+        .seasonHolder > div,
+        .img-holder > div {
+          display: none;
+        }
+        .seasonHolder > .active,
+        .img-holder > .active{
+          display: flex;
+        }
+        .seasonHolder .slide-down-exist{
+          transform: translateY(100%);
+        }
+        .seasonHolder .slide-up-exist{
+          transform: translateY(-100%);
+        }
+        @keyframes goingup {
+          
+          100%{
+            transform: translateY(-100%);
+          }
+        }
+        @keyframes goingdown {
+          100%{
+            transform: translateY(100%);
+          }
+        }
