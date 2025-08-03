@@ -1,0 +1,104 @@
+body{
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#1d2630;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.details{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+p {
+  padding: 0;
+  margin: 2px;
+}
+.details input {
+  width: 470px;
+  min-width:150px;
+  max-width: 470px;
+  padding: 10px 5px;
+}
+.details button {
+  width: 80px;
+  height: 40px;
+  background-color: green;
+  border: none;
+  color: white;
+  margin-top: 35px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.details button:hover{
+  background-color: rgb(2, 54, 2);
+  cursor: pointer;
+}
+.details button:active{
+  background-color: rgb(55, 185, 55);
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+#Update{
+  background: rgb(51, 51, 160);
+  display: none;
+}
+#Update:hover{
+  background: rgb(14, 14, 78);
+  transform: scale(0.9);
+}
+.line{
+  background-color: antiquewhite;
+  height: 1px;
+  width: 100%;
+  margin-top: 40px;
+}
+table, th, td{
+  border: solid;
+  border-width:1px ;
+  
+  border-collapse: collapse;
+  padding: 2px 7px;
+}
+table{
+  width: 100%;
+
+}
+.edit{
+  background-color: rgb(148, 148, 5);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: ease;
+}
+.delete{
+  background-color: rgb(148, 5, 5);
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: ease;
+}
+.edit:hover{
+  transform: scale(0.9);
+  background-color: yellow;
+}
+.delete:hover{
+  transform: scale(0.9);
+  background: red;
+}
+.edit:active{
+  transform: scale(0.7);
+  background-color: rgb(252, 252, 101);
+}
+.delete:active{
+  transform: scale(0.7);
+  background: rgb(245, 46, 46);
+}

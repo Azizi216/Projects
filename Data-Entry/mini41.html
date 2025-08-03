@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="dataEntry.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>CRUD Application With Local Storage</h2>
+      <div class = "details">
+        <div class = "name">
+          <p>Name</p>
+          <input id = "name" type="text" placeholder="Enter Name">
+        </div>
+        <div class = "Age">
+          <p>Age</p>
+          <input id = "age" type="text" placeholder="Enter Age">
+        </div>
+        <div class = "adress">
+          <p>Adress</p>
+          <input id = "adress" type="text" placeholder="Enter Address">
+        </div>
+        <div class = "Email">
+          <p>Email</p>
+          <input id = "Email" type="text" placeholder="Enter Email">
+        </div>
+        <div class = "buttons">
+          <button id = "AddBtn">Add Data</button>
+          <button id = "Update">Update</button>
+        </div>
+
+      </div>
+      <div class = "line"></div>
+      <table id = "table">
+          <tr>
+            <th>name</th>
+            <th>Age</th>
+            <th>Adress</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+      </table>
+    </div>
+    <script src="dataEntry.js"></script>
+  </body>
+</html>
