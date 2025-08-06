@@ -1,0 +1,164 @@
+body{
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Q0Ub9pbW5V4NM7r8DTsCIIqUWMvSzAfu5g&s");
+  background-size: cover;
+  position: relative;
+}
+.conatiner{
+  width: 270px;
+  height: 400px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 2px 2px 12px gray;
+  border-radius: 10px;
+}
+p{
+  margin: 5px;
+}
+.WieghtDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.WieghtDiv p{
+  font-weight: 700;
+  font-size: 14px;
+}
+.WieghtDiv input{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+}
+.HightDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.HightDiv input{
+  padding-top: 10px;
+  outline: none;
+ 
+}
+.HightDiv p{
+  font-weight: 700;
+  font-size: 14px;
+}
+.buttons button {
+  padding: 7px;
+  width: 132px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  transition: ease;
+}
+.buttons button:hover{
+  transform: scale(0.97);
+}
+#reset:active{
+  transform: scale(0.93);
+  background-color: rgb(41, 41, 41);
+}
+#Submit:hover{
+  transform: scale(0.97);
+  background-color: rgb(0, 238, 255) ;
+}
+#Submit:active{
+  transform: scale(0.93);
+  background-color:  rgb(13, 99, 105);
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#reset{
+  background-color: gray;
+  border: none;
+  border-radius: 4px;
+}
+#Submit{
+  background-color: rgb(60, 192, 201);
+  border: none;
+  border-radius: 4px;
+}
+h1{
+  font-size: 3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: rgb(3, 165, 3);
+}
+.details{
+  display: flex;
+  width: 100%;
+
+}
+.Underweight{
+  font-size: 12px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: solid;
+  border-color: orange;
+  width: 70px;
+  border-width: 4px;
+  
+}
+.Normal{
+  font-size: 12px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: solid;
+  border-color: green;
+  width: 70px;
+  padding-left: 5px;
+  border-width: 4px;
+}
+.OverWight{
+  font-size: 12px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: solid;
+  border-color: rgb(251, 255, 0);
+  width: 70px;
+  padding-left: 5px;
+  border-width: 4px;
+}
+.Obese{
+  font-size: 12px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: solid;
+  border-color:red;
+  width: 70px;
+  justify-content: center;
+  padding-left: 5px;
+  border-width: 4px;
+}
+.aboutbtn{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  
+}
+.aboutbtn:hover{
+  transform: scale(0.9);
+}
+.about{
+  position: absolute;
+  height: 200px;
+  width: 400px;
+  top: 60px;
+  right: 20px;
+  font-family: cursive;
+  background-color: rgb(214, 212, 212);
+  display: none;
+}

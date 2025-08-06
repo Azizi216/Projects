@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="BMI.css">
+
+  </head>
+  <body>
+    <button class = "aboutbtn">about</button>
+    <div class = "about">
+      <p>Hi, <br> I am Azizi Hashmatullah and I develpoed this website. It is designed to help people measure their weight in relation to their height and guide them toward achieving a healthy weight </p>
+    </div>
+    <div class="conatiner">
+      <h3>BMI Calculator</h3>
+      <div class = "inputs">
+        <div class = "WieghtDiv">
+          <p>Weight(kg)</p> <input id = "weight" type="text">
+        </div>
+        <div class="HightDiv">
+          <p>Height(cm)</p>  <input id = "hight" type="text">
+        </div>
+        <div class = "buttons">
+          <button id = "reset">Reset</button>
+          <button id = "Submit">Submit</button>
+        </div>
+      </div>
+      <p style="font-weight: bold;">Your BMI is</p>
+      <h1 id = "result">Re..</h1>
+      <div class = "result">
+        <p id = "Helath">You are </p>
+      </div>
+      <div class = "details">
+        <div class = "Underweight">
+          <p>Underweight</p>
+          <p><18.5</p>
+        </div>
+        <div class = "Normal">
+          <p>Normal</p>
+          <p>18.5-25</p>
+        </div>
+        <div class = "OverWight">
+          <p>OverWight</p>
+          <p>25-30</p>
+        </div>
+        <div class = "Obese">
+          <p>obese</p>
+          <p>>30</p>
+        </div>
+      </div>
+    </div>
+    <script src="BMI.js"></script>
+  </body>
+</html>
