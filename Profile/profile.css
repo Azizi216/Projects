@@ -1,0 +1,301 @@
+body{
+  position: relative;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.left img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.left{
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  gap: 10px;
+  color: white;
+}
+.header{
+  width: 100vw;
+  height: 60px;
+  background-color: rgb(27, 25, 25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+}
+.right{
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  padding-right:200px ;
+  cursor: pointer;
+  transition: ease;
+}
+.right p{
+  transition: ease;
+  scroll-behavior: smooth;
+}
+.right p:hover{
+  border-bottom: solid;
+  padding-bottom: 10px;
+}
+.right p:active{
+  transform: scale(0.9);
+  padding-bottom: 0;
+}
+.home{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(8, 8, 8);
+}
+.information{
+  color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.information p{
+  color: rgb(179, 176, 176);
+}
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  gap: 70px;
+}
+.profile img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.buttons button{
+  width: 120px;
+  padding: 10px 5px;
+  border-radius: 6px;
+  background-color: black;
+  color: orange;
+  box-shadow: 2px 1px 12px orange;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.buttons button:hover{
+  transform: scale(0.97);
+  background-color: rgb(255, 136, 0);
+  color: white;
+}
+.buttons button:active{
+  transform: scale(0.96);
+  background-color: black;
+  color: orange;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+.About{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  transition: 1s;
+}
+.About h1{
+  color: orange;
+  border-bottom: solid;
+  border-color: orange;
+  text-align: right;
+  position: absolute;
+  top: 830px;
+  right: 450px;
+  z-index: 1;
+}
+.biography{
+  width: 600px;
+  margin-top: 80px;
+}
+.personal-information{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.aboutbtns{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.aboutbtns button{
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 12px orange;
+  cursor: pointer;
+}
+.aboutbtns button:hover{
+  transform: scale(0.97);
+  box-shadow: 5px 6px 12px orange;
+}
+.aboutbtns button:active{
+  transform: scale(0.97);
+  box-shadow: -5px -6px 12px orange;
+  background-color: black;
+}
+html {
+scroll-behavior: smooth;
+}
+.myskills{
+  height: 100vh;
+  width: 100vw;
+}
+.container h1{
+  color: orange;
+  border-bottom: solid;
+  border-color: orange;
+}
+.myskills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  width: 30px;
+}
+.html{
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: solid;
+  border-color: white;
+  cursor: pointer;
+}
+.css{
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: solid;
+  border-color: white;
+}
+.JavaScript{
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: solid;
+  border-color: white;
+  cursor: pointer;
+}
+.JavaScript:hover{
+  border-bottom: solid;
+  border-radius: 10px;
+  border-color: orange;
+}
+.html:hover{
+  border-bottom: solid;
+  border-radius: 10px;
+  border-color: orange;
+}
+.css:hover{
+  border-bottom: solid;
+  border-radius: 10px;
+  border-color: orange;
+}
+.skills{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.getintouch{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container2 h1{
+  color: orange;
+}
+.contactDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.contactDetails input{
+  width: 460px;
+  padding: 7px 10px;
+  border-color: rgb(206, 202, 202);
+  border-width: 1px;
+}
+.contactDetails textarea {
+  width: 485px;
+  height: 150px;
+}
+.contactDetails button{
+  width: 120px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 35%;
+  background-color: orange;
+  color: white;
+  border: none;
+  box-shadow: 2px 6px 12px orange;
+  cursor: pointer;
+}
+.contactDetails button:hover{
+  transform: scale(0.96);
+}
+.contactDetails button:active{
+  transform: scale(0.94);
+  background: rgb(145, 96, 6);
+}
+.contact{
+  height: 100vh;
+  width: 100vw;
+  background: rgb(17, 17, 17);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media img{
+  width: 40px;
+}
+.social-media{
+  color: white;
+}
+.container3{
+  display: flex;
+  gap: 20px;
+}
+
