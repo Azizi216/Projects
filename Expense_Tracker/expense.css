@@ -1,0 +1,165 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background: linear-gradient(to bottom left, green, lightgreen);
+  margin-top: 20px;
+}
+.Upper{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to top right ,rgb(149, 230, 166), rgb(115, 214, 115), green)
+}
+.incomeandExprensesDiv{
+  display: flex;
+  gap: 20px;
+}
+.income{
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.income p{
+  color: green;
+}
+.income h3{
+  color: green;
+}
+.Expenses{
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.Expenses p{
+  color: red;
+}
+.Expenses h3{
+  color: red;
+}
+.Upper{
+  width: 650px;
+  height: 180px;
+  border-radius: 20px;
+  
+}
+.conatiner{
+  width: 720px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  height: 100vh;
+  gap: 20px;
+}
+.Lower{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+.right-Side{
+  width: 47%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height:90% ;
+  
+  padding: 10px;
+  box-shadow: 2px 1px 6px gray;
+  background-color: rgb(243, 240, 240);
+  border-radius: 4px;
+}
+.leftside{
+  width: 50%;
+  padding-left: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+  height: 320px;
+  overflow-x: hidden;
+  padding-right: 5px;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+}
+.details input{
+  width: 90%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+}
+.ExTransaction{
+  width: 94%;
+  height: 40px;
+  border: solid;
+  border-radius: 10px;
+  border-width: 8px;
+  border: none;
+  border-right: solid;
+  border-color: red;
+  box-shadow: 1px 1px 6px rgb(207, 207, 207);
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+.inTransaction{
+  width: 94%;
+  height: 40px;
+  border: solid;
+  border-radius: 10px;
+  border-width: 8px;
+  border: none;
+  border-right: solid;
+  border-color: green;
+  box-shadow: 1px 1px 6px rgb(207, 207, 207);
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+.right-Side button{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background: green;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: ease;
+}
+.right-Side button:hover{
+  transform: scale(0.98);
+}
+.right-Side button:active{
+  transform: scale(0.95);
+  background: rgb(2, 70, 2);
+}

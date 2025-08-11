@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="expense.css">
+
+</head>
+
+<body>
+
+<div class="conatiner">
+  <h1>Expense Tracker</h1>
+  <div class = "Upper">
+    <p>Your Baelance</p>
+    <h1 id = "Upper-balance">$0.00</h1>
+    <div class = "incomeandExprensesDiv">
+      <div class = "income">
+        <p>Income</p>
+        <h3 id ="incomeSower">$0.00</h3>
+      </div>
+      <div class = "Expenses">
+        <p>Expenses</p>
+        <h3 id = "ExpenseShower">$0.00</h3>
+      </div>
+    </div>
+  </div>
+  <div class = "Lower">
+    <div class = "leftside">
+      <p>Trnsaction</p>
+      
+    </div>
+    <div class = "right-Side">
+      
+      <div class = "details">
+        <h5>Add trnsaction</h5>
+      
+
+        <div class = "discriptopn">
+          <p>Description</p>
+          <input id = "Description" type="text" placeholder="Enter Description">
+        </div>
+        <div class = "Amountdiv">
+          <p>Amount</p>
+          <input id = "Amount" type="text" placeholder="Enter amount">
+          <p>use negative (-) for expenses</p>
+        </div>
+      </div>
+      <button id = "adding">Add Transaction</button>
+    </div>
+  </div>
+</div>
+
+<script src="expense.js"></script>
+
+</body>
+
+</html>
