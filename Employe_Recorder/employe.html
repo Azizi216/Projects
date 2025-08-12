@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="employe.css">
+
+  </head>
+
+  <body>
+    <div class = "header">
+      <h2>Employe</h2>
+    </div>
+    <div class="container">
+      <div class = "upper">
+        <div class = "left-side">
+          <button id = "addingBtn">+Adding Employe</button>
+          <button id = "clearBtn">Clear Filtering</button>
+        </div>
+        <div class = "right-side">
+          <div class = "search-icon">
+            <img src="https://img.icons8.com/ios_filled/512/228BE6/search.png">
+          </div>
+          <input type="text" id = "searchBox" placeholder="Type here">
+          <div class = "searchBtn">Search</div>
+        </div>
+      </div>
+      <div class = "table">
+        <table id = "table">
+          <tr>
+            <th>Sr.NO</th>
+            <th>Profile</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>E-mail</th>
+            <th>Office Code</th>
+            <th>Jobe Title</th>
+            <th>Actions</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class = "RegistrationDiv">
+      <div class = "leftSideR">
+        <img id = "preview" src="https://www.freeiconspng.com/thumbs/person-icon-blue/person-icon-blue-18.png">
+        <input id = "inputed_img" type="file">
+      </div>
+      <div class = "right-sideR">
+        <div class = "informationEntry">
+          <h4>Id</h4> <input id = "id" type="text">
+        </div>
+        <div class = "informationEntry">
+          <h4>Name</h4> <input id = "Name" type="text">
+        </div><div class = "informationEntry">
+          <h4>Last Name</h4> <input id = "LastName" type="text">
+        </div><div class = "informationEntry">
+          <h4>E-mail</h4> <input id = "Email" type="text">
+        </div>
+        <div class = "informationEntry">
+          <h4>Office Code</h4> <input id = "Office_code" type="text">
+        </div>
+        <div class = "informationEntry">
+          <h4>Jobe Title</h4> <input id = "JobeTitle" type="text">
+        </div>
+        <div class = "buttons">
+          <button id = "Register">Register</button>
+          <button id = "update">Update</button>
+        </div>
+        
+      </div>
+      <div class = "closing">X</div>
+    </div>
+    <script src="employe.js"></script>
+  </body>
+</html>
