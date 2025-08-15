@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="payment.css">
+  </head>
+
+  <body>
+    <div class = "conatiner">
+      <div class = "cardBothSide">
+        <div class = "card">
+          <div class = "header">
+            <img id = "simCart" src="https://cdn-icons-png.freepik.com/256/9334/9334627.png?semt=ais_white_label">
+            <img src="https://www.pngmart.com/files/22/Visa-Card-Logo-PNG-Isolated-Transparent-Picture.png">
+          </div>
+          <p id  = "cardNUmberDisplay"></p>
+          <div class = "bottom">
+            <div class = "CartHolder">
+              <p>CARD HOLDER</p>
+              <p id = "CardHolderName">NAME</p>
+            </div>
+            <div class = "Expire">
+              <P>EPIRES</P>
+              <p id = "expireDisplay">YEAR</p>
+            </div>
+          </div>
+        </div>
+        <div class = "backside">
+          <div class = "Black"></div>
+          <div>
+            <p style="color: white;">CVV</p>
+            <div class = "cvvHolder"></div>
+          </div>
+          <img id = "visa" src="https://www.pngmart.com/files/22/Visa-Card-Logo-PNG-Isolated-Transparent-Picture.png">
+        </div>
+      </div>
+    
+      <div class = "details">
+        <div class = "inputsDiv">
+          <p>CARD NUMBER</p>
+          <input id = "cardNumber" type="text">
+        </div>
+        <div class = "inputsDiv">
+          <p>CARD HOLDER</p>
+          <input id = "CardHolder" type="text">
+          <div class = "cardDetails">
+            <div class =  "month">
+              <p>EXPIRATION MM</p>
+              <select id = "month">
+                <option>MONTHS</option>
+              </select>
+            </div>
+            <div class = "month">
+              <p>EXPIRATION YY</p>
+              <select id = "Year">
+                <option>YEAR</option>
+              </select>
+            </div>
+            <div class =  "month">
+              <p>CVV</p>
+              <input id = "CVV" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id = "submitbtn">SUBMIT</button>
+    </div>
+
+  <script src="payment.js"></script>
+  </body>
+</html>
