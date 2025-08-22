@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<link rel="stylesheet" href="chatapp.css">
+</head>
+
+<body>
+  <div class = "conatiner">
+ 
+    <div class = "body">
+      <div class = "leftSide">
+        <div class = "leftSideDiv">
+          <div class = "leftsideHeader"> <img src="https://cdn-icons-png.flaticon.com/512/5962/5962463.png">
+            <h2>CHAT APP</h2></div>
+         <img id = "humberger_icon" src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png">
+       
+        </div>
+      <div class = "search_div">
+        <input type="text" placeholder="Search here....">
+        <img src="https://www.pikpng.com/pngl/b/111-1118617_search-magnifying-glass-icon-search-icon-svg-white.png">
+      </div>
+      <div class = "people_holder">
+       
+      </div>
+    </div>
+    <div class = "rightSide">
+      <div class="middleheader">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/5f64397931669e167fc57eaf//960x0.jpg?format=jpg&width=960">
+        <p>John doe</p>
+      </div>
+      <div class = "chatHolder" id = "chatHolder"></div>
+      <div class = "sendMessage">
+        <textarea name="" id="chat" cols="30" rows="10"></textarea>
+        <div class = "sendMessageBtn" id = "sendbtn">
+          <img src="https://cdn-icons-png.flaticon.com/512/786/786407.png">
+        </div>
+      </div>
+    </div>
+    <div class = "profileInfo">
+      <div class = "uppperSide">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/5f64397931669e167fc57eaf//960x0.jpg?format=jpg&width=960">
+        <h3>John Doe</h3>
+        <p>Hey, there I am John Doe using chatapp</p>
+      </div>
+      <button id = "logout">Logout</button>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  
+  <script src="chatapp.js"></script>
+  
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="chatlogin.css"> 
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <div class = "Name">
+        <h3>Name</h3>
+        <input id = "Name" type="text">
+      </div>
+      <div class = "Email">
+        <h3>Email</h3>
+        <input  id = "Email" type="text">
+      </div>
+      <div class = "option">
+        <h3>Gender</h3>
+        <select>
+        <option>Male</option>
+        <option>Female</option>
+        </select>
+      </div>
+      <div class = "avatar">
+        <h3>Avatar</h3>
+        <div class = "imgShow">
+          <img src="chatAvartar/male-18.png">
+        </div>
+       
+      </div>
+      <button onclick="login()">Login</button>
+      <div class = "avatars">
+        <div class = "AvatarsImages">
+          <img src="chatAvartar/male-11.png">
+        </div>
+       
+        <div class = "AvatarsImages">
+          <img src="chatAvartar/male-17.png">
+        </div>
+        
+        <div class = "AvatarsImages">
+          <img src="chatAvartar/male-18.png">
+        </div>
+        
+        <div class = "AvatarsImages">
+          <img src="chatAvartar/male-7.png">
+        </div>
+
+        <div class = "AvatarsImages">
+          <img src="chatAvartar/female-27.png">
+        </div>
+
+        <div class = "AvatarsImages">
+          <img src="chatAvartar/female-38.png">
+        </div>
+
+        <div class = "AvatarsImages">
+          <img src="chatAvartar/female-42.png">
+        </div>
+
+        <div class = "AvatarsImages">
+          <img src="chatAvartar/female-45.png">
+        </div>
+       
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+  <script src="chatlogin.js"></script>
+ </body>
+</html>

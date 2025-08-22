@@ -1,0 +1,246 @@
+*{
+  margin : 0;
+}
+body{
+  height: 90vh;
+  width: 90vw;
+  padding: 20px;
+}
+.conatiner{
+  width: 95vw;
+  height: 90vh;
+}
+.header{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+}
+.leftSide{
+  width: 30%;
+  height: 100vh;
+  border: solid;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgb(6, 12, 29);
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.body{
+display: grid;
+grid-template-columns: 1fr 1f 1fr;
+  
+}
+.rightSide{
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  left: 31.7%;
+  top: 3px;
+
+ 
+}
+.leftSideDiv img{
+  width: 60PX;
+}
+.leftSideDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftsideHeader{
+  display: flex;
+  align-items: center;
+}
+#humberger_icon{
+  filter: brightness(0) invert(1);
+  width: 25px;
+}
+.search_div{
+  width: 100%;
+  height:55px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(11, 11, 51);
+  
+}
+.search_div img{
+  width: 20px;
+  filter: brightness(0) invert(1);
+}
+.search_div input{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding-left: 5px;
+}
+::placeholder{
+  color: white;
+}
+.people_holder{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+ 
+}
+.people{
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.people:hover{
+  background-color: rgb(11, 11, 51);
+}
+.people img{
+  width: 45px;
+  height:45px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+.profileInfo{
+  height: 100%;
+  width: 28.5%;
+  position: fixed;
+  right: 0px;
+  top: 0;
+  align-items: center;
+  display: flex;
+  background-color:rgb(6, 12, 29);
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.middleheader{
+  height: 58px;
+  gap: 5px;
+  box-shadow: 0px 1px 12px;
+  display: flex;
+  align-items: center;
+  width: 100.5%;
+}
+.middleheader img{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  object-fit: cover;
+  padding-left: 10px;
+}
+.chatHolder{
+  width: 94%;
+  height: 75%;
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  white-space: nowrap;
+  overflow-x: auto;
+
+}
+.sendMessage{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(243, 243, 243);
+  position: relative;
+}
+.sendMessage input{
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  color: black;
+  padding-bottom: 20px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+}
+.sendMessageBtn img{
+  width: 20px;
+  position: absolute;
+}
+.sendMessageBtn{
+  position: absolute;
+  right: 40px;
+  top: 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgb(183, 255, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+.sendMessageBtn:hover{
+  transform: scale(0.97);
+  background-color: rgb(5, 5, 99);
+}
+.sendMessageBtn:active{
+  transform: scale(0.95);
+  background-color: rgb(19, 19, 36);
+}
+#chat{
+  width: 400px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  resize: none;
+  padding-top: 20px;
+  font-size: 16px;
+  height: 35px;
+}
+.uppperSide img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.uppperSide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-bottom:solid;
+  border-color: white;
+  height: 200px;
+  margin-top: 60px;
+  border-width: 1px;
+}
+#logout{
+  width: 150px;
+  height: 35px;
+  background-color: rgb(71, 71, 192);
+  color: white;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#logout:hover{
+  transform: scale(0.98);
+  background-color: rgb(37, 37, 110);
+}
+#logout:active{
+  transform: scale(0.96);
+  background-color: rgb(4, 4, 99);
+}
